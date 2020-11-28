@@ -1,0 +1,23 @@
+.table {
+        width: 100%;
+    background-color: #e3cfa7;
+}
+
+.mat-card {
+    width: calc(100% - 32px);
+}
+
+.subtitle {
+    font-size: 1.1rem;
+}
+
+.btn{
+    background-color: #009e65;
+}
+
+/* td{
+    border: 1px solid black;
+} */
+.mat-table {
+    width: 100%;
+}

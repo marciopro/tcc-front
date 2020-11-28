@@ -1,0 +1,28 @@
+<mat-card class="fundo">
+    <mat-card-title>Cadastro de usuário</mat-card-title>
+        <form >
+            <mat-form-field>
+                <input type="text" matInput placeholder="Nome" 
+                [(ngModel)]="name" name="name">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="email" matInput placeholder="E-mail" 
+                [(ngModel)]="email" name="email">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="password" matInput placeholder="Senha" 
+                [(ngModel)]="password" name="password">
+            </mat-form-field>
+            <mat-form-field>
+                <input type="password" matInput placeholder="Repita a senha" 
+                [(ngModel)]="confirmPassword" name="confirmPassword">
+            </mat-form-field>
+        </form>
+    </mat-card>
+    <button class = "btn" mat-raised-button (click)="createUsers()" color="primary">
+        Criar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()"  color="">
+        Cancelar
+    </button>

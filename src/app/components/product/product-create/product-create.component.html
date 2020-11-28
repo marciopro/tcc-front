@@ -1,0 +1,43 @@
+<mat-card class="fundo"> 
+<mat-card-title>Novo Reciclável</mat-card-title>
+    <form >
+        <mat-form-field>
+            <input matInput placeholder="Nome completo"  
+            [(ngModel)]="nome" name="nome"
+            >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereço completo"
+             [(ngModel)]="endereco" name="endereco"
+            >
+        </mat-form-field> 
+        <mat-form-field>
+            <input matInput placeholder="E-mail" 
+            [(ngModel)]="email"  name="email"
+            >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone"  
+            [(ngModel)]="telefone" name="telefone"
+            >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo" 
+            [(ngModel)]="tipo" name="tipo"
+            >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descrição"  
+            [(ngModel)]="descricao" name="descricao"
+            >
+        </mat-form-field>
+    </form>
+
+    <button class= "btn" mat-raised-button (click)="createProducts()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()" color="">
+        Cancelar
+    </button>
+</mat-card>
